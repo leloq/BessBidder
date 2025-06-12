@@ -5,6 +5,8 @@
 *by Kim K. Miskiw, Jan Ludwig, Leo Semmelmann, Christof Weinhardt*
 Presented at the 15th ACM International Conference on Future Energy Systems (ACM e-Energy 2025), Rotterdam
 
+BessBidder is an open-source framework for modeling and simulating battery energy storage system trading strategies across day-ahead and continuous intraday electricity markets. The framework enables researchers and practitioners to compare different bidding approaches, including myopic and coordinated strategies, using mixed integer linear programming and deep reinforcement learning.
+
 ---
 
 This repository contains the code and data accompanying the paper:
@@ -42,7 +44,7 @@ pip install -r requirements.txt
 
 ### Create `.env` file for credentials:
 
-This file manages all access credentials for the database and APIs. Specify them before starting to work with the notebook. *IMPORTANT NOTE*: EPEX Spot data is not open-source and for you to use the notebook, you will have to have bought the data. 
+This file manages all access credentials for the database and APIs. Specify them before starting to work with the notebook. A free ENTSO-E API key can be requested at [ENTSO-E Transparency Platform](https://uat-transparency.entsoe.eu/content/static_content/Static%20content/web%20api/how_to_get_security_token.html). *IMPORTANT NOTE*: EPEX Spot data is not open-source and for you to use the notebook, you will have to have bought the data. 
 
 ```env
 ENTSOE_API_KEY=...
